@@ -3,7 +3,7 @@
   
 <head> 
     <title>full screen iframe</title> 
-    <style type="text/css"> 
+    <style > 
         html { 
             overflow: auto; 
         } 
@@ -12,20 +12,14 @@
         body, 
         div, 
         iframe { 
-            margin: 0px; 
-            padding: 0px; 
-            height: 100%; 
-            border: none; 
+            iframe {
+              height:100vh;
+              width:100vw;
+         } 
         } 
           
-        iframe { 
-            display: block; 
-            width: 100%; 
-            border: none; 
-            overflow-y: auto; 
-            overflow-x: hidden; 
-        } 
-    </style> 
+       
+       </style> 
 </head> 
   
 <body> 
