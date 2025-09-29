@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <!-- ⭐️ FIX: This line is essential for mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Bronya System</title>
+    
     <!-- Correct way to set the favicon -->
     <link rel="icon" href="https://raw.githubusercontent.com/9Pu-nex/Jomjai/main/JOMJAI.png" type="image/png">
 
     <style>
-        html {
-            overflow: auto;
+        /* A better way to make the iframe fill the screen without scrollbars */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Hide scrollbars from the main page */
         }
         
-        html, body, div, iframe {
-            height: 100vh;
-            width: 100vw;
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Replaces the old frameborder attribute */
         }
     </style>
 </head>
 
 <body>
+    <!-- The src attribute should point to your Google Apps Script URL -->
     <iframe src="https://script.google.com/macros/s/AKfycbwRPcUL_lDIkg_Nr4BKCuBNXzzyejCs51U1ACnfWmchdcaRjwCSS9Y1KBediTneu_6L/exec"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            width="100%"
-            height="100%"
             scrolling="auto">
     </iframe>
 </body>
 
 </html>
+
